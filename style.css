@@ -316,7 +316,7 @@ nav{ display: flex; justify-content: space-between; align-items: top;}
             .signup-form textarea {
               resize: vertical;
             }
-
+/*
             .welc {
               text-align: center;
               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -325,9 +325,9 @@ nav{ display: flex; justify-content: space-between; align-items: top;}
               margin-bottom: 5px;
               text-transform: uppercase;
               letter-spacing: 2px;
-            }
+            } */
             
-            .welc .con {
+            /* .welc .con {
               color: #008000; /* Green for distinction */
               font-family: 'Courier New', Courier, monospace;
               font-style: italic;
@@ -335,7 +335,45 @@ nav{ display: flex; justify-content: space-between; align-items: top;}
               text-shadow: 1px 1px 2px #00000020;
               letter-spacing: 1px;
               font-size: 90px;
-            }
+            } */
+
+.welc {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #8d8b8b;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 10px; /* prevents text from touching screen edges */
+  font-size: 6vw; /* responsive font size */
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.welc .con {
+  color: #008000; /* Green for distinction */
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #00000020;
+  letter-spacing: 1px;
+  font-size: 8vw; /* responsive font size */
+}
+
+/* Extra fine-tuning for very small screens */
+@media (max-width: 480px) {
+  .welc {
+    font-size: 7vw;
+  }
+
+  .welc .con {
+    font-size: 9vw;
+  }
+}
+
+
             
             nav p a {
               display: inline-block;
